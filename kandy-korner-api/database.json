@@ -1,0 +1,20 @@
+{
+    "locations": [
+        {
+            "id": 1,
+            "address": "321 Hot St.",
+            "sqFootage": 1700
+        },
+        {
+            "id": 2,
+            "address": "1201 Cramp Ave.",
+            "sqFootage": 1600
+
+        }
+    ],
+    "products": [],
+    "employees": [],
+    "productTypes": [],
+    "customers": [],
+    "purchases": []
+}
