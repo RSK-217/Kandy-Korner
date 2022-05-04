@@ -5,7 +5,7 @@ export const Products = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/products?_expand=productType")
+            fetch("http://localhost:8088/products?_sort=productTypeId&_expand=productType")
             .then(res => res.json())
             .then((product) => {
                 setProducts(product)
