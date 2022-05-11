@@ -188,6 +188,30 @@
     }
   ],
   "customers": [
+      {
+        "id": 1,
+        "name": "Gary Numan",
+        "email": "Gary@Numan.com",
+        "phone": "555-976-3524"
+      },
+      {
+        "id": 2,
+        "name": "Will Powers",
+        "email": "Will@Powers.com",
+        "phone": "555-361-7799"
+      },
+      {
+        "id": 3,
+        "name": "Marilyn Gassy",
+        "email": "Mary@hotmail.com",
+        "phone": "555-332-5610"
+      },
+      {
+        "id": 4,
+        "name": "Buck Pucker",
+        "email": "Buck@golfwolf.com",
+        "phone": "555-180-2468"
+      }
       
   ],
   "purchases": []
