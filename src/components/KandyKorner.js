@@ -1,19 +1,14 @@
 import React from "react"
-import { Locations } from "./Locations/Locations.js"
-import { Products } from "./Products/Products.js"
+import { Route } from "react-router-dom"
+import { NavBar } from "./nav/NavBar"
+import { ApplicationViews } from "./ApplicationViews"
 
 export const KandyKorner = () => {
-  return (
-    <>
-    <h1>Kandy Korner</h1>
-
-    <h3>Locations</h3>
-    <Locations />
-
-    <h3>Products</h3>
-    <Products />
-    </>
-  );
+    return (
+      <>
+        <NavBar />
+        <ApplicationViews />
+      </>
+    )
 }
 
-export default KandyKorner;
