@@ -1,87 +1,194 @@
 {
-    "locations": [
-        {
-            "id": 1,
-            "address": "321 Hot St.",
-            "sqFootage": 1700
-        },
-        {
-            "id": 2,
-            "address": "1201 Cramp Ave.",
-            "sqFootage": 1600
-
-        }
-    ],
-    "productTypes": [
-        {
-            "id": 1,
-            "category": "Hard Candy"
-        },
-        {
-            "id": 2,
-            "category": "Gum"
-        },
-        {
-            "id": 3,
-            "category": "Chocolate"
-        },
-        {
-            "id": 4,
-            "category": "Sodas"
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "name": "Jolly Ranchers",
-            "productTypeId": 1,
-            "price": 4     
-        },
-        {
-            "id": 2,
-            "name": "Snickers",
-            "productTypeId": 3,
-            "price": 2  
-        },
-        {
-            "id": 3,
-            "name": "Bubble Tape",
-            "productTypeId": 2,
-            "price": 2  
-        },
-        {
-            "id": 4,
-            "name": "Coca-Cola",
-            "productTypeId": 4,
-            "price": 1  
-        },
-        {
-            "id": 5,
-            "name": "Butterscotch",
-            "productTypeId": 1,
-            "price": 3  
-        },
-        {
-            "id": 6,
-            "name": "Hershey Bar",
-            "productTypeId": 3,
-            "price": 2  
-        },
-        {
-            "id": 7,
-            "name": "Bubble Yum",
-            "productTypeId": 2,
-            "price": 1  
-        },
-        {
-            "id": 8,
-            "name": "Sprite",
-            "productTypeId": 4,
-            "price": 1 
-        }
-
-    ],
-    "employees": [],
-    "customers": [],
-    "purchases": []
+  "locations": [
+    {
+      "id": 1,
+      "location": "Kandy Korner East",
+      "address": "321 Hot St.",
+      "sqFootage": 1700
+    },
+    {
+      "id": 2,
+      "location": "Kandy Korner West",
+      "address": "1201 Cramp Ave.",
+      "sqFootage": 1600
+    }
+  ],
+  "productTypes": [
+    {
+      "id": 1,
+      "category": "Hard Candy"
+    },
+    {
+      "id": 2,
+      "category": "Gum"
+    },
+    {
+      "id": 3,
+      "category": "Chocolate"
+    },
+    {
+      "id": 4,
+      "category": "Sodas"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Jolly Ranchers",
+      "productTypeId": 1,
+      "price": 4
+    },
+    {
+      "id": 2,
+      "name": "Snickers",
+      "productTypeId": 3,
+      "price": 2
+    },
+    {
+      "id": 3,
+      "name": "Bubble Tape",
+      "productTypeId": 2,
+      "price": 2
+    },
+    {
+      "id": 4,
+      "name": "Coca-Cola",
+      "productTypeId": 4,
+      "price": 1
+    },
+    {
+      "id": 5,
+      "name": "Butterscotch",
+      "productTypeId": 1,
+      "price": 3
+    },
+    {
+      "id": 6,
+      "name": "Hershey Bar",
+      "productTypeId": 3,
+      "price": 2
+    },
+    {
+      "id": 7,
+      "name": "Bubble Yum",
+      "productTypeId": 2,
+      "price": 1
+    },
+    {
+      "id": 8,
+      "name": "Sprite",
+      "productTypeId": 4,
+      "price": 1
+    }
+  ],
+  "employees": [
+    {
+      "name": "Gorky Billups",
+      "locationId": "",
+      "manager": true,
+      "fullTime": true,
+      "rate": "$18",
+      "id": 1
+    },
+    {
+      "name": "Fran Darsh",
+      "locationId": "2",
+      "manager": false,
+      "fullTime": false,
+      "rate": "$15",
+      "id": 2
+    },
+    {
+      "name": "Terrance Porpo",
+      "locationId": "",
+      "manager": false,
+      "fullTime": true,
+      "rate": "$15",
+      "id": 3
+    },
+    {
+      "name": "Fred Dorf",
+      "locationId": "",
+      "manager": true,
+      "fullTime": true,
+      "rate": "$18",
+      "id": 4
+    },
+    {
+      "name": "Flip Kerrigan",
+      "locationId": "1",
+      "manager": false,
+      "fullTime": true,
+      "rate": "$15",
+      "id": 5
+    },
+    {
+      "name": "Herschel Boynkin",
+      "locationId": "Kandy Korner West",
+      "manager": true,
+      "fullTime": true,
+      "rate": "$18",
+      "id": 6
+    },
+    {
+      "name": "Yung Dush",
+      "locationId": "Kandy Korner East",
+      "manager": false,
+      "fullTime": true,
+      "rate": "$15",
+      "id": 7
+    },
+    {
+      "name": "Barbara Flap",
+      "locationId": "Kandy Korner East",
+      "manager": true,
+      "fullTime": true,
+      "rate": "$18",
+      "id": 8
+    },
+    {
+      "name": "Kerry Wilsonite",
+      "locationId": "NaN",
+      "manager": false,
+      "fullTime": false,
+      "rate": "$15",
+      "id": 9
+    },
+    {
+      "name": "Trane Dillon",
+      "locationId": "2",
+      "manager": false,
+      "fullTime": true,
+      "rate": "$15",
+      "id": 10
+    },
+    {
+      "name": "Sissy Conners",
+      "locationId": "1",
+      "manager": true,
+      "fullTime": true,
+      "rate": "$18",
+      "id": 11
+    },
+    {
+      "name": "barf mezane",
+      "locationId": "2",
+      "manager": false,
+      "fullTime": false,
+      "rate": "$15",
+      "id": 12
+    },
+    {
+      "name": "Sayzor Hosskep",
+      "locationId": "Kandy Korner West",
+      "manager": false,
+      "fullTime": true,
+      "rate": "$15",
+      "id": 13
+    }
+  ],
+  "customers": [
+      
+  ],
+  "purchases": []
 }
