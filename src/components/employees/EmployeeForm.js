@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from "react"
 import { useHistory } from "react-router-dom"
 
+
+
 export const EmployeeForm = () => {
-    const [location, setLocation] = useState([])
-
-    useEffect(
-        () => {
-            fetch("http://localhost:8088/employees?_expand=location")
-            .then(res => res.json())
-            .then((location) => {
-                setLocation(location)
-            })},
-        []
-    )
-
+    const [locations, setLocation] = useState([])
     const [employee, update] = useState({
         name: "",
-        locationId: location.id,
+        locationId: 1,
         manager: false,
         fullTime: false,
         rate: ""
     });
-
+    
+    useEffect(
+        () => {
+            fetch(`http://localhost:8088/Locations`)
+            .then(res => res.json())
+            .then(res => setLocation(res))
+        },
+        []
+    )
+    
     const history = useHistory()
 
     const saveEmployee = (e) => {
@@ -42,7 +42,7 @@ export const EmployeeForm = () => {
             body: JSON.stringify(newEmployee)
         }
 
-        return fetch ("http://localhost:8088/Employees", fetchOptions)
+         fetch ("http://localhost:8088/Employees", fetchOptions)
         .then(response => response.json())
         .then(() => {
                 history.push("/employees")
@@ -73,15 +73,16 @@ export const EmployeeForm = () => {
                 <div className="form-group">
                     <label htmlFor="location">Location:</label>
                     <select
+                    
                     onChange={
                         (e) => {
                            const copy = {...employee}
-                           copy.locationId = e.target.value
+                           copy.locationId = parseInt(e.target.value)
                            update(copy) 
                         }}>
-                        <option value="store" selected={true} disabled>Store</option>
-                        <option value={location.id}>Kandy Korner East</option>
-                        <option value={location.id}>Kandy Korner West</option>
+                        {
+                            locations.map(location=> <option key={`location--${location.id}`} value={location.id}>{location.location}</option>)
+                        }
                         </select>
                 </div>
             </fieldset>

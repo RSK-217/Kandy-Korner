@@ -36,55 +36,55 @@
       "id": 1,
       "name": "Jolly Ranchers",
       "productTypeId": 1,
-      "price": 4
+      "price": "4"
     },
     {
       "id": 2,
       "name": "Snickers",
       "productTypeId": 3,
-      "price": 2
+      "price": "2"
     },
     {
       "id": 3,
       "name": "Bubble Tape",
       "productTypeId": 2,
-      "price": 2
+      "price": "2"
     },
     {
       "id": 4,
       "name": "Coca-Cola",
       "productTypeId": 4,
-      "price": 1
+      "price": "1"
     },
     {
       "id": 5,
       "name": "Butterscotch",
       "productTypeId": 1,
-      "price": 3
+      "price": "3"
     },
     {
       "id": 6,
       "name": "Hershey Bar",
       "productTypeId": 3,
-      "price": 2
+      "price": "2"
     },
     {
       "id": 7,
       "name": "Bubble Yum",
       "productTypeId": 2,
-      "price": 1
+      "price": "1"
     },
     {
       "id": 8,
       "name": "Sprite",
       "productTypeId": 4,
-      "price": 1
+      "price": "1"
     }
   ],
   "employees": [
     {
       "name": "Gorky Billups",
-      "locationId": "",
+      "locationId": 1,
       "manager": true,
       "fullTime": true,
       "rate": "$18",
@@ -92,127 +92,89 @@
     },
     {
       "name": "Fran Darsh",
-      "locationId": "2",
+      "locationId": 2,
       "manager": false,
       "fullTime": false,
       "rate": "$15",
       "id": 2
     },
     {
-      "name": "Terrance Porpo",
+      "name": "Buff Wellington",
       "locationId": "",
-      "manager": false,
+      "manager": true,
       "fullTime": true,
-      "rate": "$15",
+      "rate": "$20",
       "id": 3
     },
     {
-      "name": "Fred Dorf",
-      "locationId": "",
-      "manager": true,
+      "name": "Tandy Wilks",
+      "locationId": "on",
       "fullTime": true,
-      "rate": "$18",
+      "rate": "$15",
       "id": 4
     },
     {
-      "name": "Flip Kerrigan",
-      "locationId": "1",
-      "manager": false,
+      "name": "Rick K",
+      "locationId": "2",
+      "manager": true,
       "fullTime": true,
-      "rate": "$15",
+      "rate": "$25",
       "id": 5
     },
     {
-      "name": "Herschel Boynkin",
-      "locationId": "Kandy Korner West",
-      "manager": true,
+      "name": "Chip Chips",
+      "locationId": "2",
+      "manager": false,
       "fullTime": true,
-      "rate": "$18",
+      "rate": "$15",
       "id": 6
     },
     {
-      "name": "Yung Dush",
-      "locationId": "Kandy Korner East",
-      "manager": false,
+      "name": "Gabe Willis",
+      "locationId": 2,
+      "manager": true,
       "fullTime": true,
-      "rate": "$15",
+      "rate": "$20",
       "id": 7
-    },
-    {
-      "name": "Barbara Flap",
-      "locationId": "Kandy Korner East",
-      "manager": true,
-      "fullTime": true,
-      "rate": "$18",
-      "id": 8
-    },
-    {
-      "name": "Kerry Wilsonite",
-      "locationId": "NaN",
-      "manager": false,
-      "fullTime": false,
-      "rate": "$15",
-      "id": 9
-    },
-    {
-      "name": "Trane Dillon",
-      "locationId": "2",
-      "manager": false,
-      "fullTime": true,
-      "rate": "$15",
-      "id": 10
-    },
-    {
-      "name": "Sissy Conners",
-      "locationId": "1",
-      "manager": true,
-      "fullTime": true,
-      "rate": "$18",
-      "id": 11
-    },
-    {
-      "name": "barf mezane",
-      "locationId": "2",
-      "manager": false,
-      "fullTime": false,
-      "rate": "$15",
-      "id": 12
-    },
-    {
-      "name": "Sayzor Hosskep",
-      "locationId": "Kandy Korner West",
-      "manager": false,
-      "fullTime": true,
-      "rate": "$15",
-      "id": 13
     }
   ],
   "customers": [
-      {
-        "id": 1,
-        "name": "Gary Numan",
-        "email": "Gary@Numan.com",
-        "phone": "555-976-3524"
-      },
-      {
-        "id": 2,
-        "name": "Will Powers",
-        "email": "Will@Powers.com",
-        "phone": "555-361-7799"
-      },
-      {
-        "id": 3,
-        "name": "Marilyn Gassy",
-        "email": "Mary@hotmail.com",
-        "phone": "555-332-5610"
-      },
-      {
-        "id": 4,
-        "name": "Buck Pucker",
-        "email": "Buck@golfwolf.com",
-        "phone": "555-180-2468"
-      }
-      
+    {
+      "name": "Jacque Mandible",
+      "address": "6690 Way Lane",
+      "email": "Jacque@gmail.com",
+      "phone": "555-321-7459",
+      "id": 1
+    },
+    {
+      "name": "Gary Hamper",
+      "address": "368 Dill Pickle Ct.",
+      "email": "Gary@gmail.com",
+      "phone": "555-436-1124",
+      "id": 2
+    }
   ],
-  "purchases": []
+  "purchases": [
+    {
+      "name": "",
+      "price": "",
+      "productId": 1,
+      "customerId": 1,
+      "id": 1
+    },
+    {
+      "name": "",
+      "price": "",
+      "productId": 1,
+      "customerId": 1,
+      "id": 2
+    },
+    {
+      "name": "",
+      "price": "",
+      "productId": 1,
+      "customerId": 1,
+      "id": 3
+    }
+  ]
 }

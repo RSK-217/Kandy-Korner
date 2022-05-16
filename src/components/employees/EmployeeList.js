@@ -7,7 +7,7 @@ export const EmployeeList = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/Employees")
+            fetch("http://localhost:8088/employees?_expand=location")
             .then(res => res.json())
             .then((employeeArray) => {
                 setEmployees(employeeArray)
@@ -27,7 +27,7 @@ export const EmployeeList = () => {
                     (employee) => {
                         return <p key={`employee--${employee.id}`}>
                             {employee.name}<br></br>
-                            {employee.locationId}</p>
+                            {employee.location?.location}</p>
                     }
                 )
             }
