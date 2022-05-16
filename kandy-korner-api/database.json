@@ -36,49 +36,49 @@
       "id": 1,
       "name": "Jolly Ranchers",
       "productTypeId": 1,
-      "price": "4"
+      "price": 4
     },
     {
       "id": 2,
       "name": "Snickers",
       "productTypeId": 3,
-      "price": "2"
+      "price": 2
     },
     {
       "id": 3,
       "name": "Bubble Tape",
       "productTypeId": 2,
-      "price": "2"
+      "price": 2
     },
     {
       "id": 4,
       "name": "Coca-Cola",
       "productTypeId": 4,
-      "price": "1"
+      "price": 1
     },
     {
       "id": 5,
       "name": "Butterscotch",
       "productTypeId": 1,
-      "price": "3"
+      "price": 3
     },
     {
       "id": 6,
       "name": "Hershey Bar",
       "productTypeId": 3,
-      "price": "2"
+      "price": 2
     },
     {
       "id": 7,
       "name": "Bubble Yum",
       "productTypeId": 2,
-      "price": "1"
+      "price": 1
     },
     {
       "id": 8,
       "name": "Sprite",
       "productTypeId": 4,
-      "price": "1"
+      "price": 1
     }
   ],
   "employees": [
@@ -155,26 +155,6 @@
     }
   ],
   "purchases": [
-    {
-      "name": "",
-      "price": "",
-      "productId": 1,
-      "customerId": 1,
-      "id": 1
-    },
-    {
-      "name": "",
-      "price": "",
-      "productId": 1,
-      "customerId": 1,
-      "id": 2
-    },
-    {
-      "name": "",
-      "price": "",
-      "productId": 1,
-      "customerId": 1,
-      "id": 3
-    }
+   
   ]
 }

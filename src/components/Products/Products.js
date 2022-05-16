@@ -25,13 +25,17 @@ export const Products = () => {
 
         const Cart = (e) => {
             e.preventDefault()
-            const newEmployee = {
-                name: purchase.name,
-                price: purchase.price,
-                productId: purchase.productId,
-                customerId: purchase.customerId
-            }
-    
+            product.map((product) => {
+                const purchaseName = product.name
+                const purchasePrice = parseInt(product.price)
+                const purchProdId = product.id
+                const newEmployee = {
+                    name: purchaseName,
+                    price: purchasePrice,
+                    productId: purchProdId,
+                    customerId: parseInt(localStorage.getItem("kandy_customer"))
+                }
+                
             const fetchOptions = {
                 method: "POST",
                 headers: {
@@ -44,8 +48,7 @@ export const Products = () => {
             .then(res => res.json())
             .then((res) => {
                 update(res)
-            })
-        }
+            })})} 
 
     return (
         <>
