@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useHistory } from "react-router-dom"
 
-
-
 export const EmployeeForm = () => {
     const [locations, setLocation] = useState([])
     const [employee, update] = useState({
@@ -12,16 +10,16 @@ export const EmployeeForm = () => {
         fullTime: false,
         rate: ""
     });
-    
+
     useEffect(
         () => {
             fetch(`http://localhost:8088/Locations`)
-            .then(res => res.json())
-            .then(res => setLocation(res))
+                .then(res => res.json())
+                .then(res => setLocation(res))
         },
         []
     )
-    
+
     const history = useHistory()
 
     const saveEmployee = (e) => {
@@ -42,11 +40,11 @@ export const EmployeeForm = () => {
             body: JSON.stringify(newEmployee)
         }
 
-         fetch ("http://localhost:8088/Employees", fetchOptions)
-        .then(response => response.json())
-        .then(() => {
+        fetch("http://localhost:8088/Employees", fetchOptions)
+            .then(response => response.json())
+            .then(() => {
                 history.push("/employees")
-        })
+            })
     }
 
     return (
@@ -56,34 +54,34 @@ export const EmployeeForm = () => {
                 <div className="form-group">
                     <label htmlFor="name">Name:</label>
                     <input
-                    onChange={
-                        (e) => {
-                           const copy = {...employee}
-                           copy.name = e.target.value
-                           update(copy) 
-                        }}
+                        onChange={
+                            (e) => {
+                                const copy = { ...employee }
+                                copy.name = e.target.value
+                                update(copy)
+                            }}
                         required autoFocus
                         type="text"
                         className="form-control"
                         placeholder="name"
-                        />
+                    />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="location">Location:</label>
                     <select
-                    
-                    onChange={
-                        (e) => {
-                           const copy = {...employee}
-                           copy.locationId = parseInt(e.target.value)
-                           update(copy) 
-                        }}>
+
+                        onChange={
+                            (e) => {
+                                const copy = { ...employee }
+                                copy.locationId = parseInt(e.target.value)
+                                update(copy)
+                            }}>
                         {
-                            locations.map(location=> <option key={`location--${location.id}`} value={location.id}>{location.location}</option>)
+                            locations.map(location => <option key={`location--${location.id}`} value={location.id}>{location.location}</option>)
                         }
-                        </select>
+                    </select>
                 </div>
             </fieldset>
             <fieldset>
@@ -91,10 +89,10 @@ export const EmployeeForm = () => {
                     <label htmlFor="manager">Manager:</label>
                     <input type="checkbox"
                         onChange={(e) => {
-                            const copy = {...employee}
+                            const copy = { ...employee }
                             copy.manager = e.target.checked
-                            update(copy) 
-                         }} />
+                            update(copy)
+                        }} />
                 </div>
             </fieldset>
             <fieldset>
@@ -102,27 +100,27 @@ export const EmployeeForm = () => {
                     <label htmlFor="fullTime">Full Time:</label>
                     <input type="checkbox"
                         onChange={(e) => {
-                            const copy = {...employee}
+                            const copy = { ...employee }
                             copy.fullTime = e.target.checked
-                            update(copy) 
-                         }} />
+                            update(copy)
+                        }} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="rate">Rate:</label>
                     <input
-                    onChange={
-                        (e) => {
-                           const copy = {...employee}
-                           copy.rate = e.target.value
-                           update(copy) 
-                        }}
+                        onChange={
+                            (e) => {
+                                const copy = { ...employee }
+                                copy.rate = e.target.value
+                                update(copy)
+                            }}
                         required autoFocus
                         type="text"
                         className="form-control"
                         placeholder="rate"
-                        />
+                    />
                 </div>
             </fieldset>
             <button className="btn btn-primary" onClick={saveEmployee}>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react"
+import React, { useEffect, useState } from "react"
 
 export const Locations = () => {
     const [locations, setLocation] = useState([])
@@ -6,22 +6,25 @@ export const Locations = () => {
     useEffect(
         () => {
             fetch("http://localhost:8088/locations")
-            .then(res => res.json())
-            .then((locale) => {
-                setLocation(locale)
-            })},
+                .then(res => res.json())
+                .then((locale) => {
+                    setLocation(locale)
+                }
+                )
+        },
         []
     )
 
     return (
         <>
-        {locations.map(
-            (location) => {
-                return <p key={`location--${location.id}`}>
-                    {location.location}<br></br>
-                    {location.address}</p>
+            {locations.map(
+                (location) => {
+                    return <p key={`location--${location.id}`}>
+                        {location.location}<br></br>
+                        {location.address}</p>
+                }
+            )
             }
-        )}
         </>
     )
 }

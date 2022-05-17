@@ -97,45 +97,6 @@
       "fullTime": false,
       "rate": "$15",
       "id": 2
-    },
-    {
-      "name": "Buff Wellington",
-      "locationId": "",
-      "manager": true,
-      "fullTime": true,
-      "rate": "$20",
-      "id": 3
-    },
-    {
-      "name": "Tandy Wilks",
-      "locationId": "on",
-      "fullTime": true,
-      "rate": "$15",
-      "id": 4
-    },
-    {
-      "name": "Rick K",
-      "locationId": "2",
-      "manager": true,
-      "fullTime": true,
-      "rate": "$25",
-      "id": 5
-    },
-    {
-      "name": "Chip Chips",
-      "locationId": "2",
-      "manager": false,
-      "fullTime": true,
-      "rate": "$15",
-      "id": 6
-    },
-    {
-      "name": "Gabe Willis",
-      "locationId": 2,
-      "manager": true,
-      "fullTime": true,
-      "rate": "$20",
-      "id": 7
     }
   ],
   "customers": [
@@ -155,6 +116,40 @@
     }
   ],
   "purchases": [
-   
+    {
+      "name": "Jolly Ranchers",
+      "price": 4,
+      "productId": 1,
+      "customerId": 2,
+      "id": 1
+    },
+    {
+      "name": "Butterscotch",
+      "price": 3,
+      "productId": 5,
+      "customerId": 2,
+      "id": 2
+    },
+    {
+      "name": "Bubble Tape",
+      "price": 2,
+      "productId": 3,
+      "customerId": 2,
+      "id": 3
+    },
+    {
+      "name": "Bubble Yum",
+      "price": 1,
+      "productId": 7,
+      "customerId": 2,
+      "id": 4
+    },
+    {
+      "name": "Hershey Bar",
+      "price": 2,
+      "productId": 6,
+      "customerId": 2,
+      "id": 5
+    }
   ]
 }

@@ -6,7 +6,7 @@ import "./NavBar.css"
 export const NavBar = (props) => {
     return (
         <ul className="navbar">
-           
+
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/Locations">Locations</Link>
             </li>
@@ -24,11 +24,11 @@ export const NavBar = (props) => {
             </li>
             <li className="navbar__item active">
                 <Link className="navbar__link" to="#"
-                onClick={
-                    () => {
-                        localStorage.removeItem("kandy_customer")
-                    }
-                }>Log Out</Link>
+                    onClick={
+                        () => {
+                            localStorage.removeItem("kandy_customer")
+                        }
+                    }>Log Out</Link>
             </li>
         </ul>
     )

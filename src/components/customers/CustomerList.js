@@ -7,10 +7,11 @@ export const CustomerList = () => {
     useEffect(
         () => {
             fetch("http://localhost:8088/customers")
-            .then(res => res.json())
-            .then((custArray) => {
-                setCustomer(custArray)
-            })},
+                .then(res => res.json())
+                .then((custArray) => {
+                    setCustomer(custArray)
+                })
+        },
         []
     )
 

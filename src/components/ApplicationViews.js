@@ -5,19 +5,22 @@ import { Products } from "./products/Products"
 import { EmployeeList } from "./employees/EmployeeList"
 import { EmployeeForm } from "./employees/EmployeeForm"
 import { CustomerList } from "./customers/CustomerList"
+import { Purchase } from "./purchases/Purchase"
 
 export const ApplicationViews = () => {
     return (
         <>
-            <Route path="/locations"><Locations /></Route>
+            <Route path="/Locations"><Locations /></Route>
 
-            <Route path="/products"><Products /></Route>
+            <Route path="/Products"><Products /></Route>
 
             <Route exact path="/Employees"><EmployeeList /></Route>
 
             <Route path="/Employees/create"><EmployeeForm /></Route>
 
-            <Route path="/customers"><CustomerList /></Route>
+            <Route path="/Customers"><CustomerList /></Route>
+
+            <Route path="/MyOrders"><Purchase /></Route>
 
 
 
